@@ -1,0 +1,1400 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET http://localhost:8080/RitishBookstoreOrder/api/categories
+Accept: application/json
+
+###
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street, Apt 14 C","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street, Apt 14 C",
+    "phone": "5402356529",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+// Invalid Name
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street, Apt 14 C","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "",
+    "address": "300 McDonald Street, Apt 14 C",
+    "phone": "5402356529",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+// Invalid address:
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street, Apt 14 C","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": " ",
+    "phone": "5402356529",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+// Long Name:
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street, Apt 14 C","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "AAAVeryVeryVeryVeryVeryVeryVeryVeryVeryLooooooooooooooonggggNNNNNaaaaaaammmmmeeeeee",
+    "address": "300 McDonald Street, Apt 14 C",
+    "phone": "5402356529",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+// Long Address Field
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street300 McDonald Street",
+    "phone": "5402356529",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+// Invalid Phone
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street",
+    "phone": "",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+//Invalid Phone
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street",
+    "phone": " ",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+//Invalid Phone
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street",
+    "phone": "540235652",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+//Invalid Phone
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street",
+    "phone": "5402356527899",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+//Invalid email
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street",
+    "phone": "5402356529",
+    "email": "ritishshailly",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+// Missing email field
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street",
+    "phone": "5402356529",
+    "email": "",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+// Missing ccNumber
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street",
+    "phone": "5402356529",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+//Invalid card number
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street",
+    "phone": "5402356529",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "444433332222451111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+//Invalid date
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street",
+    "phone": "5402356529",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 10,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+//Invalid Expiration date
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street",
+    "phone": "5402356529",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2021
+  }
+}
+
+###
+//Invalid Item quantity
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": -1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street",
+    "phone": "5402356529",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+// Invalid quantity
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 101
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street",
+    "phone": "5402356529",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+// Wrong price
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 899,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street",
+    "phone": "5402356529",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+//Invalid BookId
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street",
+    "phone": "5402356529",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+//Category ID
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1002,"title":"Cell: A Novel","author":"Stephen King","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "Cell: A Novel",
+          "author": "Stephen King",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1002
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street",
+    "phone": "5402356529",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+# curl 'http://localhost:8080/RitishBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Cache-Control: no-cache'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Cookie: JSESSIONID=9D1518861523795C819D00B8D9120B71; username-localhost-8888="2|1:0|10:1697837657|23:username-localhost-8888|204:eyJ1c2VybmFtZSI6ICIwNDNkYTlkNjdiOGE0MTM0YTlkMzZlODk4ZDczMjJlNCIsICJuYW1lIjogIkFub255bW91cyBIYXJwYWx5a2UiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBIYXJwYWx5a2UiLCAiaW5pdGlhbHMiOiAiQUgiLCAiY29sb3IiOiBudWxsfQ==|41f994aeb140bf295a382baad9511a68ad40d7877ef860a34a7d75111d8710dc"; _xsrf=2|a1fd46a1|106d89eeae4e038bb501b3ed61084aba|1697837657; username-localhost-8889="2|1:0|10:1698075140|23:username-localhost-8889|196:eyJ1c2VybmFtZSI6ICIwZWY0OTY0ZTdjODI0NjQxYWZkNjQ0ZTQ1NTI5NmZhOSIsICJuYW1lIjogIkFub255bW91cyBUaHlvbmUiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBUaHlvbmUiLCAiaW5pdGlhbHMiOiAiQVQiLCAiY29sb3IiOiBudWxsfQ==|1edabdd61df17d28aaec6040ddd20ba06df342013080eea5678d41ff474abb07"; username-localhost-8890=2|1:0|10:1698193030|23:username-localhost-8890|196:eyJ1c2VybmFtZSI6ICJiMGUwNmMzMmNjYTY0Mjc4YmY0ZWNkYjg5YmVkYTBiNSIsICJuYW1lIjogIkFub255bW91cyBFdXBvcmllIiwgImRpc3BsYXlfbmFtZSI6ICJBbm9ueW1vdXMgRXVwb3JpZSIsICJpbml0aWFscyI6ICJBRSIsICJjb2xvciI6IG51bGx9|8709bfb84bdcccd52ebd07cb143ce129de66406a1256eff961b5f7329420a068'
+#  -H 'Origin: http://localhost:8080'
+#  -H 'Pragma: no-cache'
+#  -H 'Referer: http://localhost:8080/RitishBookstoreOrder/client'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-origin'
+#  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Linux"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1022,"title":"The Power of Your Subconscious Mind","author":"Joseph Murphy","description":"","price":420,"rating":0,"isPublic":true,"isFeatured":false,"categoryId":1006},"quantity":1},{"book":{"bookId":1021,"title":"Atomic Habits","author":"James Clear","description":"","price":595,"rating":0,"isPublic":true,"isFeatured":true,"categoryId":1006},"quantity":1},{"book":{"bookId":1023,"title":"How to begin","author":"Michael Bungay Stanier","description":"","price":599,"rating":0,"isPublic":false,"isFeatured":true,"categoryId":1006},"quantity":1}]},"customerForm":{"name":"Ritish Shailly","address":"300 McDonald Street, Apt 14 C","phone":"5402356529","email":"ritishshailly001@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/RitishBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Cache-Control: no-cache
+Connection: keep-alive
+Cookie: JSESSIONID=9D1518861523795C819D00B8D9120B71; username-localhost-8888="2|1:0|10:1697837657|23:username-localhost-8888|204:eyJ1c2VybmFtZSI6ICIwNDNkYTlkNjdiOGE0MTM0YTlkMzZlODk4ZDczMjJlNCIsICJuYW1lIjogIkFub255bW91cyBIYXJwYWx5a2UiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBIYXJwYWx5a2UiLCAiaW5pdGlhbHMiOiAiQUgiLCAiY29sb3IiOiBudWxsfQ==|41f994aeb140bf295a382baad9511a68ad40d7877ef860a34a7d75111d8710dc"; _xsrf=2|a1fd46a1|106d89eeae4e038bb501b3ed61084aba|1697837657; username-localhost-8889="2|1:0|10:1698075140|23:username-localhost-8889|196:eyJ1c2VybmFtZSI6ICIwZWY0OTY0ZTdjODI0NjQxYWZkNjQ0ZTQ1NTI5NmZhOSIsICJuYW1lIjogIkFub255bW91cyBUaHlvbmUiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBUaHlvbmUiLCAiaW5pdGlhbHMiOiAiQVQiLCAiY29sb3IiOiBudWxsfQ==|1edabdd61df17d28aaec6040ddd20ba06df342013080eea5678d41ff474abb07"; username-localhost-8890=2|1:0|10:1698193030|23:username-localhost-8890|196:eyJ1c2VybmFtZSI6ICJiMGUwNmMzMmNjYTY0Mjc4YmY0ZWNkYjg5YmVkYTBiNSIsICJuYW1lIjogIkFub255bW91cyBFdXBvcmllIiwgImRpc3BsYXlfbmFtZSI6ICJBbm9ueW1vdXMgRXVwb3JpZSIsICJpbml0aWFscyI6ICJBRSIsICJjb2xvciI6IG51bGx9|8709bfb84bdcccd52ebd07cb143ce129de66406a1256eff961b5f7329420a068
+Origin: http://localhost:8080
+Pragma: no-cache
+Referer: http://localhost:8080/RitishBookstoreOrder/client
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1022,
+          "title": "The Power of Your Subconscious Mind",
+          "author": "Joseph Murphy",
+          "description": "",
+          "price": 420,
+          "rating": 0,
+          "isPublic": true,
+          "isFeatured": false,
+          "categoryId": 1006
+        },
+        "quantity": 1
+      },
+      {
+        "book": {
+          "bookId": 1021,
+          "title": "Atomic Habits",
+          "author": "James Clear",
+          "description": "",
+          "price": 595,
+          "rating": 0,
+          "isPublic": true,
+          "isFeatured": true,
+          "categoryId": 1006
+        },
+        "quantity": 1
+      },
+      {
+        "book": {
+          "bookId": 1023,
+          "title": "How to begin",
+          "author": "Michael Bungay Stanier",
+          "description": "",
+          "price": 599,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": true,
+          "categoryId": 1006
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Ritish Shailly",
+    "address": "300 McDonald Street, Apt 14 C",
+    "phone": "5402356529",
+    "email": "ritishshailly001@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 13,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

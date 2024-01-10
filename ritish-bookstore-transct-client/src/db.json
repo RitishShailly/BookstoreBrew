@@ -1,0 +1,84 @@
+//{
+//  "categories": [
+//    {
+//      "categoryId": 1001,
+//      "name": "Top-Picks"
+//    },
+//    {
+//      "categoryId": 1002,
+//      "name": "Fiction"
+//    },
+//    {
+//      "categoryId": 1003,
+//      "name": "Non-Fiction"
+//    },
+//    {
+//      "categoryId": 1004,
+//      "name": "Romance"
+//    },
+//    {
+//      "categoryId": 1005,
+//      "name": "Thriller"
+//    },
+//    {
+//      "categoryId": 1006,
+//      "name": "Self-help"
+//    }
+//  ],
+//  "books": [
+//    {
+//      "bookId": 1001,
+//      "title": "Read People like a book",
+//      "author": "Patrick King",
+//      "price": 1524,
+//      "isPublic": true,
+//      "imgName": "book1.jpg",
+//      "categoryId": 1001
+//    },
+//    {
+//      "bookId": 1002,
+//      "title": "The Asset",
+//      "author": "Saul Herzog",
+//      "price": 2499,
+//      "isPublic": false,
+//      "imgName": "book1.jpg",
+//      "categoryId": 1001
+//    },
+//    {
+//      "bookId": 1003,
+//      "title": "Bad Karma",
+//      "author": "Paul Wilson",
+//      "price": 1599,
+//      "isPublic": true,
+//      "imgName": "book1.jpg",
+//      "categoryId": 1001
+//    },
+//    {
+//      "bookId": 1004,
+//      "title": "The Body",
+//      "author": "Stephen King",
+//      "price": 1399,
+//      "isPublic": false,
+//      "imgName": "book1.jpg",
+//      "categoryId": 1001
+//    },
+//    {
+//      "bookId": 1005,
+//      "title": "Lost on purpose",
+//      "author": "Patrick Taylor",
+//      "price": 1795,
+//      "isPublic": false,
+//      "imgName": "book1.jpg",
+//      "categoryId": 1001
+//    },
+//    {
+//      "bookId": 1006,
+//      "title": "The Mindf*ck series",
+//      "author": "S.T. Abby",
+//      "price": 1899,
+//      "isPublic": true,
+//      "imgName": "book1.jpg",
+//      "categoryId": 1001
+//    }
+//  ]
+//}

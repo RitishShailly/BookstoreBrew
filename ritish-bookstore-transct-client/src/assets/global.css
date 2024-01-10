@@ -1,0 +1,50 @@
+:root {
+    --background-color: #DBC1AC;
+    --footer-background-color: rgba(219, 193, 172, 0.90);
+    --text-color: black;
+    --banner-color: rgba(35, 23, 22, 0.5);
+    --home-body-background: rgba(46, 46, 46, 0.5);
+    --shop-button-color: #c79860;
+    --neutral-color:rgba(219, 193, 172); 
+    --primary-color: #d79763;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* or any other font you're using */
+    /*background-image: url('../images/background/bookstore_blur.jpg');*/
+    /*background-size: cover;*/
+    /*background-position: center center;*/
+    /*background-attachment: fixed;*/
+    background-image: url('../images/background/coffee2.png'); /* Link to your image */
+    background-repeat: repeat; /* This will repeat the image */
+    /*background-attachment: fixed;*/
+    position: relative;
+    z-index: 0;
+}
+
+.main-content {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+}
+
+header {
+    z-index: 2;
+}
+
+h1 {
+    font-size: 4.5em; /* Adjust this value as needed */
+}
+
+h2 {
+    font-size: 2em; /* Adjust this value as needed */
+}
+
+.button.transparent-button {
+    height: 30px; /* Adjust this value as needed */
+    line-height: 20px; /* This helps vertically center the text inside the button */
+}
+
+
